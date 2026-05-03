@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+            <span>Travel Recommendation</span>
+        </div>
+        <ul>
+            <li><a href="travel_recommendation.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Enter a keyword...">
+            <button id="searchBtn" onclick="searchDestinations()">Search</button>
+            <button id="clearBtn" onclick="clearResults()">Clear</button>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Explore the World</h1>
+            <p>Discover amazing destinations, beaches, temples, and countries around the world.</p>
+            <button class="book-btn">Book Now</button>
+        </div>
+    </div>
+
+    <div id="results"></div>
+
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>
