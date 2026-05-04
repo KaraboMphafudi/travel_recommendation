@@ -125,6 +125,63 @@ nav ul li a:hover {
     background-color: #d4920a;
 }
 
+/* Search Hints Section */
+.search-hints {
+    text-align: center;
+    padding: 40px 30px;
+    background-color: #f9f9f9;
+}
+
+.search-hints h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.search-hints p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.hints {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hint-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.hint-card:hover {
+    transform: translateY(-5px);
+    background-color: #f0a500;
+    color: white;
+}
+
+.hint-card:hover p {
+    color: white;
+}
+
+.hint-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.hint-card p {
+    font-size: 16px;
+    color: #666;
+}
+
 /* Results Section */
 #results {
     padding: 30px;

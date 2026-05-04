@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Navigation Bar -->
     <nav>
         <div class="logo">
             <img src="logo.png" alt="logo">
@@ -24,6 +26,7 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <div class="hero">
         <div class="hero-content">
             <h1>Explore the World</h1>
@@ -32,6 +35,27 @@
         </div>
     </div>
 
+    <!-- Search Hints Section -->
+    <div class="search-hints">
+        <h2>What are you looking for?</h2>
+        <p>Click on a category or type a keyword to search:</p>
+        <div class="hints">
+            <div class="hint-card" onclick="autoSearch('beach')">
+                <h3>🏖️ Beaches</h3>
+                <p>Click to discover stunning beaches around the world</p>
+            </div>
+            <div class="hint-card" onclick="autoSearch('temple')">
+                <h3>🛕 Temples</h3>
+                <p>Click to explore historic temples and monuments</p>
+            </div>
+            <div class="hint-card" onclick="autoSearch('country')">
+                <h3>🌍 Countries</h3>
+                <p>Click to discover amazing cities around the world</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Section -->
     <div id="results"></div>
 
     <script src="travel_recommendation.js"></script>

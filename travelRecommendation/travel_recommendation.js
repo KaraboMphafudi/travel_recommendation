@@ -66,7 +66,6 @@ function searchDestinations() {
                         const card = document.createElement('div');
                         card.classList.add('result-card');
 
-                        // Get timezone based on country
                         let timezone = 'UTC';
                         if (country.name === 'Australia') timezone = 'Australia/Sydney';
                         if (country.name === 'Japan') timezone = 'Asia/Tokyo';
@@ -112,4 +111,10 @@ function getCountryTime(timezone) {
         second: 'numeric'
     };
     return new Date().toLocaleTimeString('en-US', options);
+}
+
+// Auto search function for hint cards
+function autoSearch(keyword) {
+    document.getElementById('searchInput').value = keyword;
+    searchDestinations();
 }
